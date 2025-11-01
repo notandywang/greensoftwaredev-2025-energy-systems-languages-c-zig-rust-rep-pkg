@@ -105,6 +105,8 @@ This is the root directory of the replication package. The directory is structur
 replication-package-group8
 │
 ├── src/                           # Source code of the scheduler implementations
+│   ├── compile_all.sh             # Unified compilation script for all languages
+│   ├── run_tests.sh               # Automated experimental runner
 │   ├── c/                         # C implementations (Clang, Zig CC, GCC)
 │   ├── rust/                      # Rust implementation
 │   └── zig/                       # Zig implementation
@@ -115,14 +117,13 @@ replication-package-group8
 │   └── plots/                     # Figures included in the paper
 │
 ├── analysis/                      # Scripts for statistical analysis and plotting
-│   └── analyze_results.py
+│   ├── create_report_figures.py   # Generating plots 
+│   └── analyze_results.py         # Statistical analysis
 │
-├── documentation/                 # Additional documentation and configuration files
-│   └── environment.yml            # Tool and dependency specification
+├── documentation/                 # Additional documentation 
+│   └── final_report_gsd_ass3.pdf  # Final report
 │
-├── compile_all.sh                 # Unified compilation script for all languages
-├── run_tests.sh                   # Automated experimental runner
-├── LICENSE                        # License file (MIT recommended)
+├── LICENSE                        # License file (does not exist)
 └── README.md                      # This document
 ```
 
